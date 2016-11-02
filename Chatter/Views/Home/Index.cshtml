@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Chatter</h1>
+    <p class="lead">If this is your first time please join! <a class="btn btn-default" onclick="location.href='@Url.Action("Register", "Account")' ">Register </a></p>
+    
+    
+   <p> If you are returning please log-in below to view your messages.<a class="btn btn-default" onclick="location.href='@Url.Action("Login", "Account")' ">Log-in </a></p>
+    
+    
+    <p>After you login here are your chats. <a class="btn btn-default" onclick="location.href='@Url.Action("Index", "Messages")' ">Your Chatter </a></p>
+
+</div>
+
